@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Mascot::factory(100)->create();
+        Mascot::factory(500)->create();
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([

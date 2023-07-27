@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\Mascots\IndexMascot;
+use App\Http\Livewire\Mascots\ShowMascot;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,4 +28,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
     Route::get('mascots',IndexMascot::class)->name('mascots.index');
+    Route::get('mascots/{mascot}',ShowMascot::class)->name('mascots.show');
 });

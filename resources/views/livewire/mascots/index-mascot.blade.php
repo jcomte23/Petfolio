@@ -37,6 +37,8 @@
                                 {{ $mascot->peso }}
                             </td>
                             <td class="px-2 py-3 whitespace-nowrap text-center ">
+                                <a href="{{ route('mascots.show', $mascot->id) }}"
+                                    class="bg-sky-500 hover:bg-sky-700 text-white px-4 py-2 rounded">{{ __('Show') }}</a>
                                 <a href="{{ route('mascots.index', $mascot->id) }}"
                                     class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded">{{ __('Edit') }}</a>
                             </td>
