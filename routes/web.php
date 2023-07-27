@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Mascots\IndexMascot;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,7 +23,8 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
+    Route::get('dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('mascots',IndexMascot::class)->name('mascots.index');
 });
