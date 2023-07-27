@@ -1,9 +1,26 @@
 {
-    "name": "laravel/laravel",
+    "name": "jcomte23/petfolio",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "Aplicación de gestión de información de mascotas para un seguimiento cuidadoso y organizado de tus compañeros peludos.",
+    "keywords": [
+        "Petfolio",
+        "Mascotas",
+        "CRUD",
+        "Información",
+        "Gestión",
+        "Datos",
+        "Registro",
+        "Seguimiento"
+    ],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Javier Cómbita Téllez",
+            "email": "jcomte23@outlook.com",
+            "homepage": "https://javiercombita.com",
+            "role": "Lead Developer"
+        }
+    ],
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
