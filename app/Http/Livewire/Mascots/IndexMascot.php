@@ -7,9 +7,11 @@ use Livewire\Component;
 
 class IndexMascot extends Component
 {
+    public $search='';
+
     public function render()
     {
-        $mascots=Mascot::paginate(50);
+        $mascots=Mascot::where('name','like',"%$this->search%")->paginate(10);
         return view('livewire.mascots.index-mascot',compact('mascots'));
     }
 }

@@ -1,6 +1,11 @@
 <div class="py-12">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg">
+            <form>
+                <div>
+                    <x-input wire:model="search" type="text" class="block m-2 w-1/4" placeholder="Search" autofocus />
+                </div>
+            </form>
             <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
                 <thead class="bg-blue-200 dark:bg-blue-900 text-gray-500 dark:text-white">
                     <tr>
